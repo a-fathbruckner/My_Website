@@ -1,0 +1,143 @@
+/* Contact inf0 */
+#top {
+    text-align: right;
+    margin-top: 4%;
+    margin-inline: 4%;
+    font-family: Arial;
+}
+
+/* Page background */
+#body {
+    background: #798897;
+}
+
+/* Resume text style */
+#text {
+    font-size: 15px;
+    text-align: left;
+    margin-left: 4%;
+    margin-top: 0%;
+    font-family: Arial;
+}
+
+/* Resume header text style */
+#head {
+    font-size: 18px;
+    text-align: left;
+    margin-left: 4%;
+    margin-bottom: 0.7%;
+    font-family: Arial;
+}
+
+/* Resume subtext text style */
+#subtext {
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Arial;
+}
+
+/* about me button style */
+#about_me {
+    display: block;
+    font-size: 15px;
+    font-family: Arial;
+    font-weight: bold;
+    background: #90969c;
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 7px 12px;
+    border-radius: 12px;
+    margin: 0 auto;
+}
+
+/* Hover effect for about me button */
+#about_me:hover{
+    transition-duration: 0.4s;
+    background-color: #04AA6D;
+    color: black;
+}
+
+/* Overlay that appears when About me is clicked */
+.about_me-overlay {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: auto;
+    height: auto;
+    background: transparent; 
+    display: none;
+    z-index: 1000;
+}
+
+/* My profile picture */
+#myPic {
+    border-radius: 8px;
+    width: 42%;
+    height: auto;
+    float: right;
+}
+
+/* about me pop up box */
+.popup {
+    background: #90969c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+    max-width: 300px;
+    text-align: center;
+    font-family: Arial;
+
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.4s ease;
+}
+
+/*slid in and out effect */
+.popup.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* close button styling */
+#closePopup {
+    background: #90969C;
+}
+
+#closePopup:hover {
+    transition-duration: 0.4s;
+    background-color: red;
+}
+
+/* social button styling */
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin: 10px auto;
+    width: fit-content;
+}
+
+#GitHub, #Linkedin {
+    background: #90969c;
+    font-size: 15px;
+    padding: 7px 12px;
+    border-radius: 12px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+/* social button hover effects */
+#GitHub:hover {
+    transition-duration: 0.4s;
+    background-color: #3A3B3C;
+    color: black;
+}
+
+#Linkedin:hover {
+    transition-duration: 0.4s;
+    background-color: #0041C2;
+    color: black;
+}
