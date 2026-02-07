@@ -1,14 +1,38 @@
-/* Contact inf0 */
+/* Contact info */
 #top {
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
     margin-top: 4%;
     margin-inline: 4%;
     font-family: Arial;
+    text-align: right;
 }
 
+/*sets custom cursor*/
+body {
+    cursor: url("DarkAeroReg.cur")12 12, auto;
+}
+
+a, button, [role="button"] {
+    cursor: url("DarkAeroReg.cur"), pointer;
+}
 /* Page background */
 #body {
     background: #798897;
+    border: 6px solid rgba(240, 255, 255, 0.8);
+    margin: 20px;
+    box-sizing: border-box;
+    border-radius: 60px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+}
+
+/* Boarder for mobile deivces */
+@media (max-width: 600px) {
+    #body{
+        margin: 12px;
+        border-radius: 24px;
+    }
 }
 
 /* Resume text style */
@@ -68,7 +92,16 @@
     background: transparent; 
     display: none;
     z-index: 1000;
+    background: #798897;
 }
+
+/* Bubble around heading information*/
+.top, #head {
+    background-color: rgb(24, 177, 167);
+    border-radius: 12px;
+    padding: 7px 12px;
+    width: fit-content;
+}   
 
 /* My profile picture */
 #myPic {
@@ -80,7 +113,7 @@
 
 /* about me pop up box */
 .popup {
-    background: #90969c;
+    background:  rgb(24, 177, 167);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -92,6 +125,9 @@
     opacity: 0;
     transform: translateY(100%);
     transition: all 0.4s ease;
+    border: 6px solid rgba(240, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 /*slid in and out effect */
@@ -120,7 +156,7 @@
     width: fit-content;
 }
 
-#GitHub, #Linkedin {
+#GitHub, #Linkedin, #Handshake {
     background: #90969c;
     font-size: 15px;
     padding: 7px 12px;
@@ -139,5 +175,11 @@
 #Linkedin:hover {
     transition-duration: 0.4s;
     background-color: #0041C2;
+    color: black;
+}
+
+#Handshake:hover {
+    transition-duration: 0.4s;
+    background-color: #32CD32;
     color: black;
 }
